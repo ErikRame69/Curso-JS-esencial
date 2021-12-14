@@ -47,4 +47,21 @@ var simbolo2 = Symbol();
 
 var ambiente = Symbol('dev');
 
+/******************* || ESTRUTURA DE DATOS CON JSON || ***************/
+//JavaScript Object Notation 
 
+var persona = {nombre: 'Erik', LinkedIn:'Erik Daniel Ramirez Mendoza'}; //Esto viene siendo un objeto de datos en formato JSON
+
+var personas = [{nombre: 'Daniel', LinkedIn:'Daniel Mendoza'},
+                {nombre: 'Ernesto', LinkedIn:'Ernesto de la Cruz'},
+                {nombre: 'Armando', LinkedIn:'Armando Roman'}];
+console.log(personas);
+
+var personaJSON = JSON.stringify(personas);
+console.log(personaJSON);
+//Es este ejemplo estamos convirtiendo un objeto de tipo JSON en una cadena de texto o String
+
+var nuevaPersonas = JSON.parse(personaJSON);
+console.log(nuevaPersonas);
+//Es este caso 
+ 
