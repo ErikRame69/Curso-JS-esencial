@@ -39,5 +39,12 @@ var fecha = new Date();//Nos muestra el dia, mes, año y minuto de la fecha
 fecha.getMonth();//El metodo get nos permite acceder a diferentes metodos para otener un dato de "tiempo".
 
 
+/******************* || SIMBOLOS || ***************/
+//Cada vez que yo genero un simbolo se esta generando un dato unico alrededor del programa
+var simbolo1 = Symbol();
+var simbolo2 = Symbol();
+//Aunque paresca que simbolo1 y simbolo2 son similares por su nulo contenido, estos son completamente diferentes.
+
+var ambiente = Symbol('dev');
 
 
