@@ -122,3 +122,15 @@ console.log("El resultado del por igual es: " + porIgual);
 var entreIgual = 100;
 entreIgual /= number1;
 console.log("El resultado de entre igual es: " + entreIgual);
+
+
+
+/******************* || OPERADOR NEGATIVO || *******************/
+//Lo  único que  hace es cambiar el signo del valor que se esta almacenando.
+
+var datoA = 10;
+var datoB = -datoA;
+
+console.log("El valor del dato A es: " + datoA +
+            "\nEl valor del dato B despues del operador negativo es: " + datoB); //-10
+
