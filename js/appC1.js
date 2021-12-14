@@ -1,4 +1,7 @@
 "use strict" //************** || Siempre debe de ir en la linea 1 ||**************
+
+//CAP.1 APROXIMACIÓN A JAVASCRIPT
+
 //Este es un modo seguro donde JS comprueba que estemos llevando a cabo "buenas practicas" pues
 //corrobora que las variables y demás cosas no esten usando palbras reservadas u otro tipo de problemas.
 
