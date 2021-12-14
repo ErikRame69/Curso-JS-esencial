@@ -41,3 +41,9 @@ saludo();
 /* Si queremos trabajar con varibles globales usaremos "var"
 
 y si queremos trabajar con un cierto alcance limitado dentro de una funcion o scrip usamos "let"*/
+
+
+// **************** || COSNT || ****************
+const pi = 3.1416;
+console.log(pi); 
+/**De esta forma podemos hcaer que un tipo de dato persista y que este no pueda ser alterado */
