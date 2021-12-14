@@ -63,5 +63,7 @@ console.log(personaJSON);
 
 var nuevaPersonas = JSON.parse(personaJSON);
 console.log(nuevaPersonas);
-//Es este caso 
- 
+//Es este caso convertimos las cadena de texto en un objeto JSON
+
+/*Cada vez que requieramos trabajar con muchos datos debemos de pensar 
+en JSON, ya que es mas rapido y facil*/
