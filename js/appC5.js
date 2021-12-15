@@ -1,6 +1,7 @@
 "use strict" //Activamos modulo estricto para evitar muchas fallas.
 
 /******************* || CONDICION IF || *******************/
+console.log("CONDICION IF");
 
 var number1 = 10;
 var number2 = 20;
@@ -33,10 +34,11 @@ console.log("El resultado de la evaluacion IF es: ", resultado);
 
 /******************* || CONDICIÓN ELSE || *******************/
 //Else se ejecuta si la condicion de if no se cumple, es como el "plan B"
+console.log("\nCONDICIÓN ELSE");
 
-// var number1 = 10;                       Se han comentado esta variables 
-// var number2 = 20;                       porque ya estan declradas en la parte
-// var resultado = "Sin datos";            superior, y solo son demostrativas
+// var number1 = 10;                     Se han comentado esta variables 
+// var number2 = 20;                     porque ya estan declradas en la parte
+// var resultado = "Sin datos";          superior, y solo son demostrativas
 
 if (number1 > number2 ){ //La condicion if no se cumple
     resultado = "La condición se cumplió";
@@ -46,3 +48,29 @@ if (number1 > number2 ){ //La condicion if no se cumple
 a la variable resultados y al no validarse if se imprime en cosola el mensaje
 "La condicion no se cumplió */
 console.log("El resultado de la evaluacion IF es: ", resultado);
+//Imprime en cosola "La condición no se cumplió".
+
+
+
+/******************* || USANDO LA CONDICIÓN IF - ELSE IF - ELSE || *******************/
+console.log("\nUSANDO LA CONDICIÓN IF - ELSE IF - ELSE ");
+/*La condicion else if nos permite tener mas validaciones  en caso de ser necesario
+  podemos decir que agregamos mas opciones
+  Una ventaja es que podemos añadir tantas validaciones como necesitemos*/
+
+// var number1 = 10;                     Se han comentado esta variables 
+// var number2 = 20;                     porque ya estan declradas en la parte
+// var resultado = "Sin datos";          superior, y solo son demostrativas
+
+if (number1 > number2 ){ //La condicion if no se cumple
+    resultado = "La condición se cumplió";
+}else if (number1 == number1){
+    resultado = "Los numeros son iguales"; //ESTA CONDICION SE CUMPLE
+}/*Es en esta condicion donde podemos añadir mas opciones, de esta manera podemos 
+tomar en cuenta una serie de parametros mas amplia */
+else{//Al cumplirse la condicion pasada podemos esta ya no se ejecuta
+    resultado = "La condición no se cumplió";
+}
+
+console.log("El resultado de la evaluacion IF es: ", resultado);
+//Imprime en cosola "Los numeros son iguales".
