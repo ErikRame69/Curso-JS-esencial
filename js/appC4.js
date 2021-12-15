@@ -163,3 +163,18 @@ console.log("Estas lineas de codigo no suman los numero porque estan como un str
 // Concatenación de texto y números.         || + ||
 var concatTextNum = number1 + "8";
 console.log(concatTextNum); //108
+
+
+
+/******************* || OPERADOR TERNEARIO || *******************/
+//Operador ternario o condicional,  es un operador compuesto y me permitirá hacer 2 operaciones en una sola
+
+// var number1 = 10;     Fueron comentadas por que estan
+// var number2 = 20;     declaradas en la parte superior
+
+// Estructura del operador    || condicion ? TRUE : FAlSE ||
+var resultado = number1 < number2 ? "Si es mayor" : "No es mayor";
+console.log("El resultado es: " + resultado); //Si es mayot
+
+
+
