@@ -174,7 +174,25 @@ console.log(concatTextNum); //108
 
 // Estructura del operador    || condicion ? TRUE : FAlSE ||
 var resultado = number1 < number2 ? "Si es mayor" : "No es mayor";
-console.log("El resultado es: " + resultado); //Si es mayot
+console.log("El resultado es: " + resultado); //Si es mayor
 
 
 
+/******************* || OPERADOR DE TIPO DE DATOS || *******************/
+/*Este operador nos sera de mucha ayuda cuando nosotros 
+queramos saber que tipo de dato es la variable */
+
+// var number1 = 10;               Fueron comentadas por que estan
+// var nombre = "Erik Daniel";     declaradas en la parte superior
+var activo = true;
+
+var persona = {
+    edad:22,
+    deporte: "TaeKwanDo"
+}
+console.log(typeof number1);               // number
+console.log(typeof nombre);                // string
+console.log(typeof activo);                // boolean
+console.log(typeof persona);               // object
+console.log(typeof persona.edad);          // number
+console.log(typeof persona.deporte);       // String
