@@ -134,3 +134,32 @@ var datoB = -datoA;
 console.log("El valor del dato A es: " + datoA +
             "\nEl valor del dato B despues del operador negativo es: " + datoB); //-10
 
+
+
+/******************* || OPERADOR DE CONCATENACION || *******************/
+/*Este tipo de dato concatena dos tipos de datos o valores, este tipo de operados
+no sumas dos tipos de datos a menos que sean numeros de otra manera solo concatena
+los tipos de datos o valores, o datos y valores*/
+
+// var number1 = 10;     Fueron comentadas por que estan
+// var number2 = 20;     declaradas en la parte superior
+
+var nombre = "Erik Daniel";
+var apellido = "Ramirez Mendoza";
+
+// Concatenación de números.                 || + ||
+var concatNumeros = number1 + number2;
+console.log(concatNumeros); //30
+
+// Concatenación de cadenas de texto.        || + ||
+var concatTexto = nombre + " " + apellido;
+console.log(concatTexto); // Erik Daniel Ramirez Mendoza
+
+// Concatenación de números como texto.      || + ||
+var concatNumComoText = "8" + "2";
+console.log("Estas lineas de codigo no suman los numero porque estan como un string: "
+ + concatNumComoText); // 82
+
+// Concatenación de texto y números.         || + ||
+var concatTextNum = number1 + "8";
+console.log(concatTextNum); //108
