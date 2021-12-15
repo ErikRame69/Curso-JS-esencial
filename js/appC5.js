@@ -29,3 +29,20 @@ if (number1 < number2 ){
 console.log("El resultado de la evaluacion IF es: ", resultado);
 //Imprime en la consola "la condición se cumplio"
 
+
+
+/******************* || CONDICIÓN ELSE || *******************/
+//Else se ejecuta si la condicion de if no se cumple, es como el "plan B"
+
+// var number1 = 10;                       Se han comentado esta variables 
+// var number2 = 20;                       porque ya estan declradas en la parte
+// var resultado = "Sin datos";            superior, y solo son demostrativas
+
+if (number1 > number2 ){ //La condicion if no se cumple
+    resultado = "La condición se cumplió";
+}else{ //Else podríamos traducirlo, como "en caso contrario" o "al contrario"
+    resultado = "La condición no se cumplió"
+}/*Como podemos ver en este caso al no cumplirse se le asigna la cadena de texto 
+a la variable resultados y al no validarse if se imprime en cosola el mensaje
+"La condicion no se cumplió */
+console.log("El resultado de la evaluacion IF es: ", resultado);
