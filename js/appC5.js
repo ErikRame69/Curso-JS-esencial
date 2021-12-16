@@ -1,4 +1,4 @@
-"use strict" //Activamos modulo estricto para evitar muchas fallas.
+"use strict" //Activamos modulo estricto para evitar posibles fallas.
 
 /******************* || CONDICION IF || *******************/
 console.log("CONDICION IF");
@@ -7,7 +7,7 @@ var number1 = 10;
 var number2 = 20;
 var resultado = "Sin datos";
 
-//      || CASO 2 ||     //
+//-------------------------|| CASO 1 ||----------------------//
 
 if (number1 > number2 ) /* Usando el operador relacional "Mayor que" estamos 
 validando si la condicion es real, en caso de que la condicion si sea real 
@@ -20,7 +20,7 @@ se ejutara lo que este contenido en los siguiente corchete*/
 console.log("El resultado de la evaluacion IF es: ", 
             resultado); // Imprimira en la cosola "Sin datos"
 
-//      || CASO 2 ||     //
+//-------------------------|| CASO 2 ||----------------------//
 
 /*Si nosotros hacemos una condicion diferente lo que se imprimiria en la consola
  seria "La condición se cumplio". */
@@ -101,3 +101,60 @@ if (number1 > newDate){
 
 console.log("El resultado de la evalución anidada es:", resultado);
 //Imprime en consola "El resultado de la evalución anidada es: Evaluación anidada verdadera"
+
+
+
+/******************* || LA ESTRUCTURA SWITCH || *******************/
+console.log("\nLA ESTRUCTURA SWITCH");
+
+//-------------------------|| CASO 1 ||----------------------//
+
+var edad = 30;
+var resultado = "";
+
+switch (edad) { // esta es la variable con la que se compararan los casos del switch
+    case 10: //Este es la primer condicion
+        resultado = "La edad es 10 años";//Esto guarda un string en resultado
+        break; // Con el Break indicamos que la funcion debe para ahi.
+    case 20:
+        resultado = "La edad es 20 años";
+        break;
+    case 30:
+        resultado = "La edad es 30 años";
+        break;
+    case 40:
+        resultado = "La edad es 40 años";
+        break;
+    default: /*En caso de que ningun caso coincida se ejecutara 
+    lo que se encuentre dentro de default*/
+        resultado = "Ningun dato coincide con algun caso";
+        break;
+}
+console.log("El resultado del Switch es:", resultado);
+//Imprime en consola "El resultado del Switch es: La edad es 30 años"
+
+//-------------------------|| CASO 2 ||----------------------//
+
+var producto = "TV";
+switch (producto) {
+    case "TV":
+        resultado = "Se eligió TV";
+        break;
+    case "Radio":
+        resultado = "Se eligió Radio";
+        break;
+    case "Teléfono":
+        resultado = "Se eligió Teléfono";
+        break;
+    case "Internet":
+        resultado = "Se eligió Internet";
+        break;
+    default:/*En caso de que ningun caso coincida se ejecutara 
+    lo que se encuentre dentro de default*/
+        resultado = "No se eligió nada";
+        break;
+}/*Incluso podemos anidar mas estructuras de control 
+dentro de los casos del Switch*/
+
+console.log("El resultado del Switch es:", resultado);
+//Imprime en la cosola "El resultado del Switch es: Se eligio TV"
