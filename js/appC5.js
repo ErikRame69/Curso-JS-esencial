@@ -74,3 +74,30 @@ else{//Al cumplirse la condicion pasada podemos esta ya no se ejecuta
 
 console.log("El resultado de la evaluacion IF es: ", resultado);
 //Imprime en cosola "Los numeros son iguales".
+
+
+
+/******************* || CONDICIONES ANIDADAS || *******************/
+console.log("\nCONDICIONES ANIDADAS");
+
+// var number1 = 10;                     Se han comentado esta variables 
+// var number2 = 20;                     porque ya estan declradas en la parte
+// var resultado = "Sin datos";          superior, y solo son demostrativas
+
+var newDate = 5;
+
+if (number1 > newDate){
+    resultado = "La condición se cumplió";
+    if (number1 < number2){ /*Aqui empieza la funcion anidada
+        Esta condicion se tiene que cumplir para poder mostrar lo que estan 
+        dentro del if, en caso contrario, se mostrara lo que esta en el else*/
+        resultado = "Evaluación anidada verdadera";
+    }else{//Se ejecuta si y solo si if es falso
+        resultado = "No se cumplio la evalucion anidada";
+    }
+} else {
+    resultado = "La condición no se cumplió";
+}
+
+console.log("El resultado de la evalución anidada es:", resultado);
+//Imprime en consola "El resultado de la evalución anidada es: Evaluación anidada verdadera"
