@@ -1,5 +1,8 @@
 "use strict" //Activamos modulo estricto para evitar muchas fallas.
 
+console.log("\n************* C4 - USO DE OPERADORES EN JAVASCRIPT ************\n");
+
+
 /******************* || OPERADORES ARITMÉTICOS || *******************/
 //Este tipo de operador nos permitira hacer calculos aritméticos
 
@@ -8,7 +11,7 @@ var number2 = 20;
 
 // Suma                    || + ||
 var suma = number1 + number2;
-console.log("La suma de: " + number1 + " + " + number2 + ", Es igual a = " + suma);
+console.log("\n La suma de: " + number1 + " + " + number2 + ", Es igual a = " + suma);
 
 // Resta.                  || - ||
 var resta = number1 - number2;

@@ -1,8 +1,10 @@
 "use strict"
 
+console.log("\n************* C2 - USO DE VARIABLE O CONTENEDORES DE DATOS ************");
+
 var nombre = "Erik"; //Variable de tipo global
 
-console.log(nombre);
+console.log("\n"+nombre);
 
 /**************** || SIGNIFICADO DE UNA VARIABLE || *******************
 La palabra var es un a palabra reservada para declarar una variable

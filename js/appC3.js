@@ -1,5 +1,8 @@
 "use strict"
 
+console.log("\n************* C3 - TIPOS DE DATOS ESPECÍFICOS DE JAVASCRIPT ************\n");
+
+
 /******************* || TIPO DE DATO NUMERICO || *******************/
 var edad = 35;
 var edad1 = 40.5;
@@ -7,7 +10,7 @@ var edad2 = -35;
 //Podemos usar numeros enteros, flotante, positivos y negativos.
 
 var cantidad = "100"; //Los numeros no llevan comillas porque este tipo de datos se interpretan como un string.
-console.log(cantidad);
+console.log("\n"+cantidad);
 
 var nuevaCantidad = Number(cantidad);
 

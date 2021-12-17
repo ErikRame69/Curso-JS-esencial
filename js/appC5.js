@@ -1,4 +1,6 @@
 "use strict" //Activamos modulo estricto para evitar posibles fallas.
+console.log("\n************* C5 - USO DE CONDICIONES O DECISIONES EN JAVASCRIPT ************\n");
+
 
 /******************* || CONDICION IF || *******************/
 console.log("CONDICION IF");

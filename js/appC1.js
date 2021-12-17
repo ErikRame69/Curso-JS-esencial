@@ -1,5 +1,8 @@
 "use strict" //************** || Siempre debe de ir en la linea 1 ||**************
 
+console.log("\n************* C1 - APROXIMACIÓN A JAVASCRIPT ************");
+
+
 //CAP.1 APROXIMACIÓN A JAVASCRIPT
 
 //Este es un modo seguro donde JS comprueba que estemos llevando a cabo "buenas practicas" pues
