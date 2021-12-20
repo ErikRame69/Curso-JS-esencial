@@ -37,3 +37,17 @@ for (let contador = 0;  contador  <  productos;   contador++){
     debugger; //Esta opcion nos ayuda a hacer debbuger en el navegador    
 }
 
+/******************* || CICLO WHILE || *******************/
+console.log("\nCICLO WHILE");
+
+/*En este ciclo a diferencia del FOR, aqui se va a estar ejecutando e iterando 
+siempre y cuando se cumpla la condicion que tenemos puesta.*/
+
+var productos= 5;
+
+while(productos > 0){
+  console.log("Producto vendido con función While"); //Esto se mostrara en pantalla
+  productos--;              //Este es el decremento que lleva a cabo
+  debugger;                 //Con el debugger podemos ver los pasos en la consola
+}
+//La ventaja de trabajar con este ciclo es que primero evalua y despues ejecuta.
