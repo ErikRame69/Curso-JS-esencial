@@ -51,3 +51,20 @@ while(productos > 0){
   debugger;                 //Con el debugger podemos ver los pasos en la consola
 }
 //La ventaja de trabajar con este ciclo es que primero evalua y despues ejecuta.
+
+
+
+/******************* || CICLO DO WHILE || *******************/
+console.log("\nCICLO DO WHILE");
+
+/*A diferencia del ciclo While el ciclo Do While se ejecutara por lo menos una vez.*/
+
+productos = 5;
+
+do{ /*PARTE 1:  Primero se ejecutara esta sección, posteriormente en la parte 2
+  Se preguntara si se puede seguir con la condicion hasta que esta no se cumpla.*/
+  console.log("Producto vendido con función Do While");
+  productos--;          //Este es el decremento que lleva a cabo
+  debugger;             //Con el debugger podemos ver los pasos en la consola
+}while(productos>=1) /*PARTE 2:  En esta parte se pregunta si se puede continuar 
+con el ciclo, en caso de que la condicion no se cumpla esta se detendra*/
