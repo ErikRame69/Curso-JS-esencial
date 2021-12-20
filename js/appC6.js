@@ -68,3 +68,38 @@ do{ /*PARTE 1:  Primero se ejecutara esta sección, posteriormente en la parte 2
   debugger;             //Con el debugger podemos ver los pasos en la consola
 }while(productos>=1) /*PARTE 2:  En esta parte se pregunta si se puede continuar 
 con el ciclo, en caso de que la condicion no se cumpla esta se detendra*/
+
+
+
+/******************* || CONTROL DE CICLOS || *******************/
+console.log("\nCONTROL DE CICLOS");
+
+//En este caso tenemos dos palabras reservadas "continue" y "break".
+
+//Declaramos la variables
+var contador = 0;
+var cuenta = 0;
+
+/*Iniciamos el ciclo FOR eneste ciclo vamos a averiguar cuanto numero pares 
+hay del 1 al 20 para esto usamos el ciclo FOR*/
+for (contador = 0; contador <= 20; contador++) {/*En esta parte declaramos las
+  condiciones que queremos que se cumplan, por ejemplo: Contador debe ser mayor a 0
+  pero menor a 20, tiene un autouncremento de 1 (++)*/
+
+  if (contador == 15) {//Cuadno el contador llegue a 6 se pondra fin al ciclo FOR
+
+    break; /*Con esta condicion indicamos al ciclo que debe de para si los 
+    parametros del if se cumplen*/
+  }
+
+  if (contador % 2 == 0) {/*Aqui indicamos que si el residuo de la divicion de 
+    contador es igual a 0 entonces puede continuar y sumar +1 a la cuenta*/
+    continue;/*Esta es  la sentencia que permite continuar con el ciclo si la 
+    condicion if aun se cumple*/
+  }
+  cuenta++;/*Si elresultado del residuo en la division da igual a 0 entonces 
+  cuenta tendra un autoincremento de +1*/
+  debugger;
+}
+console.log("Hay " + cuenta + " numero impares");/*Aqui nos muestra el total de 
+los numero impares que hay*/
