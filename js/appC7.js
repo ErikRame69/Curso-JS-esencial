@@ -79,3 +79,23 @@ mensaje nos mostrara lo que la funcion contiene. */
 /*IMPRIME:      Hola: @ErikDanielRM
                 Edad: 22
                 @ErikDanielRM tiene 22 años     */
+
+
+
+/******************* || INICIALIZANDO LOS PARAMETROS || *******************/
+console.log("\n|| INICIALIZANDO LOS PARÁMETROS");
+
+/*En el caso de que nuestros parametros no reciban nigun valor nosotros podemos 
+inicializarlas, con esto podemos evitar algunas fallas y asi estamos seguros que
+si la funcion no recibe determinados valores esta puede no ejecutarse o lanzar 
+un determinado mensaje*/
+
+function contar(cantidad=0){/*Aqui inicializamos la variable a 0, esto puede 
+    cambiar dependiendo de nuestra necesidades o requerimientos de la aplicacion*/
+    console.log("Total: ", cantidad);
+}
+
+contar(100);/*Si nosotros no le pasamos ningun valor al parametro este se 
+inicializa en 0, pero como vemos aqui le estamos pasando el calor de 100 y este
+se le asigna a contar y ahora dentro de la funcion contar, el parametro vale 100
+y no 0 */
