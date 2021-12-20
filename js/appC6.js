@@ -103,3 +103,41 @@ for (contador = 0; contador <= 20; contador++) {/*En esta parte declaramos las
 }
 console.log("Hay " + cuenta + " numero impares");/*Aqui nos muestra el total de 
 los numero impares que hay*/
+
+
+
+/******************* || EJEMPLO || *******************/
+console.log("\nEJEMPLO");
+
+var y = 5;
+var texto = "";
+
+do{ /*Esta es una funcion Do whilw que iterara el ciclo for siempre y cuando la
+  condicion del while se cumpla*/
+
+    for (let x = 0; x < y; x++) { /*En esta parte inicia imprimiendo una cadena de
+      texto siempre y cuando x sea menor que y, por eso imprime primero:
+      *****
+      ****
+      ***
+      **
+      *
+      Porque el for hace que se sume un * a cada texto. */
+        texto = texto + "*";
+
+      /*Ahora cada vez que la condicion de "x < y" ya no se cumpla se rompera el 
+      ciclo y pasara a las siguientes instrucciones */
+    }
+
+    console.log(texto)//Aqui imprime ne la consola el valor de texto
+
+    texto = "";//Aqui vuelve a declarar la variable "texto" igual a 0;
+    
+    y--;/*Aqui hace un decremento en la variable usada de manera "global" por todos
+    los ciclos de -1 en "y"*/
+
+} 
+while (y>0);/*Compara si "y" es mayor que "0" en caso de que esta condicion si se
+cumpla volvera a repetir el ciclo de for pero esta vez "y" vale -1 en todo el ciclo
+Do While y ahora en el ciclo for y es menor y los pasos del ciclo for se reducen
+por eso imprime un "*" menos en cada iteracion*/
