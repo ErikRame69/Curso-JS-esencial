@@ -157,3 +157,27 @@ regalosNavidad(...regalosPrincipales/*Es aqui donde declaramos un parametro de t
     REST porque "regalosPrincipales" ocupad los dos primeros parametros declarados
     en la funcion*/, "Carritos Hot Wheels", "Terrenator", "Cocinita", "Espada", 
     "Celular", "Samsumg Tab", "Laptop MSI", "Libros");
+
+
+
+/******************* || FUNCIONES ANONIMAS || *******************/
+console.log("\n|| FUNCIONES ANÓNIMAS");
+
+
+// function(){
+//     var mensaje = "Hola de nuevo, seguimos aprendiendo JavaScript";
+//     console.log(mesaje)
+// }
+// )()
+
+var saludar = function (nombreAnonimo){/*asignamos la funcion anonima a la variable
+    saludar*/
+
+    var mensaje = "Hola de nuevo, seguimos aprendiendo JavaScript " + nombreAnonimo;
+    return mensaje;
+}
+/* Esta es es la manera en la que podemos invocar una funcion anonima, la asignamos
+a una variable y a esta le asignamos el valor de la funcion.
+En este caso podemos llamarla desde la consola o podemos imprimirla con las siguientes
+lineas de codigo:*/
+console.log(saludar("Erik"));
