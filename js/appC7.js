@@ -181,3 +181,47 @@ a una variable y a esta le asignamos el valor de la funcion.
 En este caso podemos llamarla desde la consola o podemos imprimirla con las siguientes
 lineas de codigo:*/
 console.log(saludar("Erik"));
+
+
+
+/******************* || ENTENDIENDO LOS CALLBACKS || *******************/
+console.log("\n|| ENTENDIENDO LOS CALLBACKS");
+
+//Con los callbacks podemos llamar como parámetros a una o varias funciones.
+//Los callbacks comúnmente nos ayudan a controlar procesos asíncronos.
+
+function calcular(data1, data2, sumarCB, restarCB, multiplicarCB, dividirCB){
+    var suma = data1 + data2;
+    var resta = data1 - data2;
+    var multiplicacion = data1 * data2;
+    var divicion = data1 / data2;
+
+    sumarCB(suma);
+    restarCB(resta);
+    multiplicarCB(multiplicacion);
+    dividirCB(divicion);
+}
+
+calcular(5, 7, //Aqui estamos pasando los parametros 
+    function(resultado){ //Aqui hacemos la funcion de los CB
+        console.log("Suma", resultado);
+    },
+    function(resultado){
+        console.log("Resta", resultado);
+    },
+    function(resultado){
+        console.log("Multiplicación", resultado);
+    },
+    function(resultado){
+        console.log("Divición", resultado);
+    })
+/*Podriamos decir que llamamos a una funcion anonima que declaramos dentro de los
+parametros para este caso y la funcion nos dice que haremos con el callback y los
+parametros ingresados.*/
+
+/*IMPRIME EN CONSOLA LO SIGUIENTE:
+    Suma 12
+    Resta -2
+    Multiplicación 35
+    Divición 0.7142857142857143
+ */
