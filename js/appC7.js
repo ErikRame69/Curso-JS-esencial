@@ -225,3 +225,56 @@ parametros ingresados.*/
     Multiplicación 35
     Divición 0.7142857142857143
  */
+
+
+
+/******************* || FUNCIONES ARROW || *******************/
+console.log("\n|| FUNCIONES ARROW");
+
+/*Todas esta son funciones anonimas y cada una la podemos usar de acuerdo a las 
+necesidades del proyecto*/
+
+var saludaremos = nombre => "Hola " + nombre;
+console.log(saludaremos("Erik Daniel RM"));
+/*declaramos la variable saludaremos que recibira un paramentro llamado nombre.
+Cuando la funcion se ejecute a la cadena de caracteres "Hola" le concatenaremos la
+variable nombre, y nos IMPRIME EN CONSOLA LO SIGUIENTE:
+||    Hola Erik Daniel RM   ||*/
+
+
+var sumar = cantidad => cantidad + 10;
+console.log(sumar(10));
+/*En esta declaramos la variable sumar que recibe un parametro llamado 
+cantidad, depues a cantidad le sumamos 10.
+IMPRIME EN CONSOLA LO SIGUIENTE:
+||    20    ||*/
+
+
+var calculando = (datoA, datoB) => datoA + datoB;
+console.log(calculando(10, 15));
+/*Aqui estamos creando una funcion anonima asignada a la variable calculando, 
+esta recibe 2 parametros (datoA, datoB) que despues de suman
+IMPRIME EN CONSOLA LO SIGUIENTE:
+||    25    ||*/
+
+
+var suma3Num = (datoA, datoB) => {
+    var datoC = 5;
+    return datoA + datoB + datoC;
+}
+console.log(suma3Num(10, 15));
+/*Esta funcion es un poco mas compleja de explicar pues aqui hay una funcion que 
+se le mandan dos parametros, estos parametros se suman junto a una 3ra varible 
+declarada dentro de la funcion. La funcion retorna la suma y es así como la podemos 
+mandar a llamar y mostrar el resultado en consola
+IMPRIME EN CONSOLA LO SIGUIENTE:
+||    30    ||*/
+
+var validar = () => {
+    return "Validación correcta";
+}
+console.log(validar());
+/*Por ultimo tenemos esta funcion que no se le han asignado parametros y que al
+ejecutarse retorna una cadena de caracteres
+IMPRIME EN CONSOLA LO SIGUIENTE:
+||    Validacion correcta    ||*/
