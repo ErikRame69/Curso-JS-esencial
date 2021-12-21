@@ -278,3 +278,18 @@ console.log(validar());
 ejecutarse retorna una cadena de caracteres
 IMPRIME EN CONSOLA LO SIGUIENTE:
 ||    Validacion correcta    ||*/
+
+
+
+/******************* || USO DEL OPERADOR THIS || *******************/
+console.log("\n|| USO DEL OPERADOR THIS");
+
+//Este operador es como si se refieriera a algo, como un "Esto".
+
+const boton = document.querySelector('.boton');
+//Mandamos a llamar la clase div boton para implementar el addEvenListener.
+
+boton.addEventListener('click', ()=>{ //Implementamos una funcion anonima
+    console.log(this);
+    this.location = "https://www.google.com/" //nos redirige a Google.com
+});
