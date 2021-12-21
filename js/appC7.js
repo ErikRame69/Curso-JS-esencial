@@ -123,3 +123,37 @@ function cocinar(...paramsTypeRest) {/*Para que sea una funcios de tipo REST deb
 cocinar("Pollo", "Pescado", "Bacalao", "Langosta", "Pepinillos", "Salt", "Carne");
 /*En esta parte es donde podemos meter una infinidad de parametros para poder
 sin la necesidad de declararlos en la funcion*/
+
+
+
+/******************* || PARAMETROS DE TIPO SPREAD || *******************/
+console.log("\n|| PARAMETROS DE TIPO SPREAD");
+
+/*Con este tipo de parametros podemos enviar una cierta cantidad de parametros sin
+que estos esten declarados directamente.
+Lo interesante es que podemos convinar los paramtros de tipo REST con los de tipo
+SPREAD de esta manera podemos tener una funcion que tenga una cantidad "infinita"
+de parametros*/
+
+function regalosNavidad(regalo1, regalo2, ...masRegalos){/*Como vemos de este lado 
+    estamos llamando a un paramtro de tipo REST*/
+    console.log("Primer regalo: ", regalo1);
+    console.log("Segundo regalo: ", regalo2);
+    console.log("Más regalos: ", masRegalos);
+
+    /*TODO ESTO NOS IMPRIME LOS SIGUIENTE:
+        Primer regalo:  MaxSteel
+        Segundo regalo:  Barbie
+        Más regalos:  (8) ['Carritos Hot Wheels', 'Terrenator', 'Cocinita',
+         'Espada', 'Celular', 'Samsumg Tab', 'Laptop MSI', 'Libros']
+    */
+}
+
+var regalosPrincipales = ["MaxSteel", "Barbie"];
+
+regalosNavidad(...regalosPrincipales/*Es aqui donde declaramos un parametro de tipo
+    SPREAD, con los tres puntos cuando nosotros llamamos al metodo y no en los 
+    parametros de la funcion, a partir de aqui los demas parametros son de tipo
+    REST porque "regalosPrincipales" ocupad los dos primeros parametros declarados
+    en la funcion*/, "Carritos Hot Wheels", "Terrenator", "Cocinita", "Espada", 
+    "Celular", "Samsumg Tab", "Laptop MSI", "Libros");
