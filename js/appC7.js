@@ -99,3 +99,27 @@ contar(100);/*Si nosotros no le pasamos ningun valor al parametro este se
 inicializa en 0, pero como vemos aqui le estamos pasando el calor de 100 y este
 se le asigna a contar y ahora dentro de la funcion contar, el parametro vale 100
 y no 0 */
+
+
+
+/******************* || PARAMETROS DE TIPO REST || *******************/
+console.log("\n|| PARAMETROS DE TIPO REST");
+
+/*Este tipo de parametros nos permite tener mas de un parametro en la funcion
+de esta forma en caso de tener muchos parametros evitamos el declarar uno por uno*/
+
+function cocinar(...paramsTypeRest) {/*Para que sea una funcios de tipo REST debemos
+    colocar 3 puntos antes del nombre del parametro (...) esto le indica a la funcion
+    que sera un parametro de tipo REST.
+    Estos se van a guardar en un Array*/
+
+    console.log("Total ingredients Array: ", paramsTypeRest); /*Aqui mostramos el 
+    contenido de la funcion y como vemos nos imprime los parametros en un Array
+    
+    IMPRIME EN CONSOLA:
+            Total ingredients Array:  (7) ['Pollo', 'Pescado', 
+                'Bacalao', 'Langosta', 'Pepinillos', 'Salt', 'Carne']           */
+}
+cocinar("Pollo", "Pescado", "Bacalao", "Langosta", "Pepinillos", "Salt", "Carne");
+/*En esta parte es donde podemos meter una infinidad de parametros para poder
+sin la necesidad de declararlos en la funcion*/
