@@ -284,9 +284,9 @@ IMPRIME EN CONSOLA LO SIGUIENTE:
 /******************* || USO DEL OPERADOR THIS || *******************/
 console.log("\n|| USO DEL OPERADOR THIS");
 
-//Este operador es como si se refieriera a algo, como un "Esto".
+//Este operador es como si se refiriera a algo, como un "Esto".
 
-const boton = document.querySelector('.boton');
+const boton1 = document.querySelector('.boton');//Sw renombro la varible para evitar conflictos
 //Mandamos a llamar la clase div boton para implementar el addEvenListener.
 
 boton.addEventListener('click', ()=>{ //Implementamos una funcion anonima
