@@ -104,3 +104,35 @@ video.addEventListener("seeking", function () {
 video.addEventListener("ended", function () {
     console.log("El video ha terminado");
 });//Muestra en consola cuando hemos terminado el video.
+
+
+
+/******************* || USO DE TEMPORIZADORES O TIMERS || *******************/
+console.log("\n|| USO DE TEMPORIZADORES O TIMERS");
+
+/*Estos nos ayudaran a ejecutar acciones cada determinado tiempo, ya de manera 
+unica o de manera infinita*/
+
+var tenporizador =  setInterval(function(){
+    setColor();
+}, 2000)
+/*Aqui lo que estamos haciendo es definiendo el tiempo en el que se iterara.
+El tiempo siempre sera en milisegundo.
+Como podemos ver en la linea 117 lo que estamos haciendo es pasarle la funcion
+que queremnos que se ejecute de manera recurrente*/
+
+// setTimeout(function(){
+//     setColor();
+// }, 3000)
+/*FUNCION COMENTADA PARA EVITAR UN CONFLICTO ENTRE setInterval Y setTimeout
+Esta funcion solo se ejcuta una vez, y por lo tanto la funcion que contiene
+igual se ejecutara una vez, */
+
+function setColor() {
+    var pagina = document.body;
+    pagina.style.backgroundColor = pagina.style.backgroundColor == "blue" ? "green" : "blue";    
+}//En esta funcion definimos el cambio de color del fondo de la pagina web
+
+function stopChangeColor() {
+    clearInterval(tenporizador);
+}//Aqui limpiamos el interval y paramos la itaracions de temporizador.
