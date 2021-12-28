@@ -68,3 +68,17 @@ window.addEventListener("keypress", function(event){
 window.addEventListener("keyup", function(event){
     console.log("Tecla liberada");
 })/*Y por ultimo tenemos este evento que nos indica cuando la tecla a sido liberada*/
+
+
+
+/******************* || EVENTOS DE CARGA DE DOCUMENTO || *******************/
+console.log("\n|| EVENTOS DE CARGA DE DOCUMENTO");
+
+//Este evento nos ayuda a saber cuando se ha cargado todo el contenido de la página
+window.addEventListener('load', function(){
+    console.log("El contenido de la página se a cargado de manera correcta.");
+    /*De este lado podemos poner algunas  de las funciones que serviran para nuestra 
+    pagina así podemos asegurar que las funciones se ejecutaran solo si el evento se 
+    ha cumplido o en este caso, si la pagina o documento se ha cargado 
+    satisfactoriamente*/
+})
