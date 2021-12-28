@@ -81,4 +81,26 @@ window.addEventListener('load', function(){
     pagina así podemos asegurar que las funciones se ejecutaran solo si el evento se 
     ha cumplido o en este caso, si la pagina o documento se ha cargado 
     satisfactoriamente*/
-})
+});
+
+
+
+/******************* || EVENTOS MULTIMEDIA EN JAVASCRIPT || *******************/
+console.log("\n|| EVENTOS MULTIMEDIA EN JAVASCRIPT");
+
+/*Para poder ejecutar los eventos en la pagina web lo que vamos a hacer es llamar
+la parte a usar desde el HTML con el querySelector de java script */
+
+const video = document.querySelector('.amazonVideo');
+
+video.addEventListener("play", function () {
+    console.log("El video ha iniciado");
+});//Nos sirve para escuchar cuando le han puesto play a un video de la pagina web.
+
+video.addEventListener("seeking", function () {
+    console.log("Se esta buscando en el video", this.currentTime);
+});//Nos indica si estamos buscando algo en el video y en que segundos los hacemos
+
+video.addEventListener("ended", function () {
+    console.log("El video ha terminado");
+});//Muestra en consola cuando hemos terminado el video.
