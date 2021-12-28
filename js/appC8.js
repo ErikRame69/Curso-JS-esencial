@@ -46,3 +46,25 @@ boton.addEventListener('mouseout', function (){
 /*Eate evento se activa cuanso el mouse se encuentra fuera del boton.
 IMPRIME EN CONSOLA:
 ||  El mouse esta fuera del boton */
+
+
+
+/******************* || EVENTOS CON EL TECLADO || *******************/
+console.log("\n|| EVENTOS CON EL TECLADO");
+
+window.addEventListener("keydown", function(event){
+    console.log("Pulsando tecla");
+    console.log(String.fromCharCode(event.keyCode));
+})/*Con este evento vamos a estar  escuchando cada que nosotros pulsamos una tecla
+De esta manera nos indicara cuando se mantenga pulsada una tecla
+En este ejemplo podemos ver que si nosotros solicitamos que letra es primero nos 
+pasa un codigo y este lo tenemos que transformar usando el codigo de la linea 57
+Nota: Al precionar la barra espaciadora no aparece nada pero con las demas letras si*/
+
+window.addEventListener("keypress", function(event){
+    console.log("Tecla pulsada");
+})/*Con esto indicamos el momento en que la tecla se mantiene oprimida*/
+
+window.addEventListener("keyup", function(event){
+    console.log("Tecla liberada");
+})/*Y por ultimo tenemos este evento que nos indica cuando la tecla a sido liberada*/
