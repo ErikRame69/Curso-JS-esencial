@@ -52,3 +52,26 @@ console.log("isInteger: ", Number.isInteger(numeroC10));
     2.Si es un entero
 Es importante mensionar que es necesario el uso de la clase Number para poder hacer
 uso de esta clase*/
+
+
+
+/******************* || METODOS NUMERICOS DE INSTANCIAS || *******************/
+console.log("\n|| MÉTODOS NUMÉRICOS DE INSTANCIAS");
+
+var numeroC10_2 = 2.5;
+
+console.log("toExponencial: ", numeroC10_2.toExponential(2));
+/*Con este metodo nos regrasa una notacion exponecial del numero que tenemos 
+almacenado en la variable*/
+
+console.log("toFixed: ", numeroC10_2.toFixed(2)); /*Con este metodo solicitamos
+la cantidad de numeros decimales que tiene una determinada variable y en dado
+caso que no coloquemos nada dentro de los parentesis este nos traera un numero
+entero redondeado*/
+
+console.log("toPrecision", numeroC10_2.toPrecision(6));
+/*Es similar  al tofixed pero esto nos indica la cantidad de decimales que 
+necesitamos para nuestro proyecto*/
+
+console.log("toString: ", numeroC10_2.toString());/*Convierte este numero
+a una cadena de texto*/
