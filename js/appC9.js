@@ -88,3 +88,23 @@ videoC9.addEventListener("ended", function(){
     }/*Debemos de condiderar hacer uso solamente con datos que no sean confidenciales
     o con formularios muy largos */
 })
+
+/******************* || PROPIEDADES NUMERICAS || *******************/
+console.log("\n|| PROPIEDADES NUMÉRICAS");
+
+//Haremos uso de prospiedades numericas para determiandas situaciones
+
+console.log("MAX_VALUE: ", Number.MAX_VALUE);
+//Nos muestra el valor mas grande con el que podemos usar en JavaScript
+
+console.log("MIN_VALUE: ", Number.MIN_VALUE);
+//Nos muestra el valor mas chico con el que podemos usar en JavaScript
+
+console.log("POSITIVE_INFINITY: ", Number.POSITIVE_INFINITY);
+//Nos muestra el objeto infinito +
+
+console.log("NEGATIVE_INFINITY: ", Number.NEGATIVE_INFINITY);
+//Nos muestra el objeto infinito -
+
+console.log("NaN: ", Number.NaN); /*Not a Number 
+Nos sirve para saber si un dijito es o no un numero*/
