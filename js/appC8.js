@@ -91,7 +91,7 @@ console.log("\n|| EVENTOS MULTIMEDIA EN JAVASCRIPT");
 /*Para poder ejecutar los eventos en la pagina web lo que vamos a hacer es llamar
 la parte a usar desde el HTML con el querySelector de java script */
 
-const video = document.querySelector('.amazonVideo');
+const videoC8 = document.querySelector('.amazonVideo');
 
 video.addEventListener("play", function () {
     console.log("El video ha iniciado");
