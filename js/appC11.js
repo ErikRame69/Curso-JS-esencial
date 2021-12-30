@@ -135,4 +135,39 @@ console.log(resultado);
 //charAt
 console.log("** charAt ** ");
 resultado = mensaje2.charAt(3);//Recordemos que este metodo empieza a contar en 0.
+console.log("Nos muestra el caracter: ", resultado);
+
+
+
+/******************* || BUSQUEDA DE CADENAS DE TEXTO ESPECIFICAS || *******************/
+console.log("\n|| BÚSQUEDA DE CADENAS DE TEXTO ESPECÍFICAS");
+
+//var mensaje2 = "Estoy aprendiendo JavaScript y estoy aprendiendo mucho";
+//var resultado;
+//Comentado para evitar conflicto con variable de la linea 69
+
+//startsWith
+console.log("** startsWith ** ");
+resultado = mensaje2.startsWith("Es");
+console.log(resultado);
+/*En este metodo podemos hacer añadirle un segundo parametro depues de una coma 
+||  " ", parametro|| 
+para indicarle en que posicion puede empezar a buscar, ejemplo: */
+var texEn = mensaje2.indexOf("JavaScript");
+console.log("la posición de la palabra es: ",texEn);
+resultado = mensaje2.startsWith("Ja", texEn);
+console.log(resultado);
+
+//endWith
+console.log("** endWith ** ");
+resultado = mensaje2.endsWith("mucho");//Preguntamos si termina con este texto
+console.log(resultado);
+
+//includes
+console.log("** includes ** ");
+resultado = mensaje2.includes("estoy", 8);/*Estamos preguntando si la cadena de texto
+incluye la palabra indicada, en este caso "estoy" .
+Tambien podemos indicarle un segundo parametros despues de una coma
+||  "", parametro || 
+para indicar en que posicion debe de empezar a encontrar coincidencias*/
 console.log(resultado);
