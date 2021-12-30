@@ -98,3 +98,41 @@ sensitive:
 " /Aqui va la expresion a buscar/i " la i nos indica que la busqueda sera insencible
 a mayusculas o minusculas*/
 console.log(resultado);
+
+
+
+/******************* || BUSQUEDA DE CARACTERES EN CADENAS DE TEXTO || *******************/
+console.log("\n|| BÚSQUEDA DE CARACTERES EN CADENAS DE TEXTO");
+
+//var mensaje2 = "Estoy aprendiendo JavaScript y estoy aprendiendo mucho";
+//var resultado;
+//Comentado para evitar conflicto con variable de la linea 69
+
+//match
+console.log("** match ** ");
+resultado = mensaje2.match(/aprendiendo/gi);/*Con match tenemos que hacer uso de 
+expresiones regulares.
+Como podemos ver tenemos una g despues de la barra diagonal, esto es para que busque 
+todas las coincidencias y nos las muestre */
+console.log(resultado);
+
+//substr
+console.log("** substr ** ");
+resultado = mensaje2.substr(6, 11);
+            /*El primer para- | El segundo parametro 
+            metro indica la   | indica la cantidad de
+            posicion inicial  | caracteres a recorrer*/
+console.log(resultado);
+
+//substring
+console.log("** substring ** ");
+resultado = mensaje2.substring(6, 17);
+               /*El primer para- | El segundo parametro 
+               metro indica la   | indica la segunda posicicion
+               posicion inicial  | donde finaliza la busqueda*/
+console.log(resultado);
+
+//charAt
+console.log("** charAt ** ");
+resultado = mensaje2.charAt(3);//Recordemos que este metodo empieza a contar en 0.
+console.log(resultado);
