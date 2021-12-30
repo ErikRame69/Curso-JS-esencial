@@ -44,3 +44,19 @@ length: 13
 
 Este tipo de creacion de cadenas de texto debemos de usarla en determinados casos
 ya que lo que guarda es un objeto como tal. */
+
+
+
+/******************* || MEDIR UNA CADENA DE TEXTO || *******************/
+console.log("\n|| MEDIR UNA CADENA DE TEXTO");
+
+/*En nuesta carrera como desarrollador muchas veces vamos a necesitar saber en
+la longitud de una cadena de texto, esta puede ser desde 0 (Donde podemos indicar 
+el no continuar) hasta "infinito" */
+
+var mensaje = "a b c";/*IMPRIME EN CONSOLA: "La cadena de texto tiene: 5 letras"
+La propiedad .length tomara en cuenta todos los caracteres,
+incluidos los espacion */
+
+console.log("La cadena de texto tiene: " + mensaje.length + " letras");
+//Imprime: 5
