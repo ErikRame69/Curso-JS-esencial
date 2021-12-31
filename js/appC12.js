@@ -140,3 +140,20 @@ console.log("Con el textContent: ", platillosMap);
 var platillosOf = Array.of("Queso", "Pan", "Leche", "Harina", "Huevo");
 //Convierte todo lo que este dentro y separado por una coma en un array.
 console.log(platillosOf);
+
+
+
+/******************* || ORDENANDO UN ARREGLO || *******************/
+console.log("\n|| ORDENANDO UN ARREGLO");
+
+var platillos = ["Tacos", "Langosta", "Albóndigas", "Salmón"];
+console.log("Antes de ordenarlos ", platillos);
+//Se muestra como esta en el arreglo
+
+platillos.sort();
+console.log("Despues de ordenarlos ", platillos);
+//Se muestra de manera ordenanda alfabeticamente
+
+platillos.reverse();
+console.log("Despues de ordenarlos de manera inversa ", platillos);
+//Se muestra de manera ordenanda alfabeticamente invertido
