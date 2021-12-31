@@ -157,3 +157,27 @@ console.log("Despues de ordenarlos ", platillos);
 platillos.reverse();
 console.log("Despues de ordenarlos de manera inversa ", platillos);
 //Se muestra de manera ordenanda alfabeticamente invertido
+
+
+
+/******************* || DESESTRUCTURACION DE ARREGLOS || *******************/
+console.log("\n|| DESESTRUCTURACIÓN DE ARREGLOS");
+
+var platillos = ["Tacos", "Langosta", "Albóndigas", "Salmón"];
+
+// var platilloDes1 = platillos[0];
+// var platilloDes2 = platillos[1];
+// var platilloDes3 = platillos[2];
+// var platilloDes4 = platillos[3];
+
+// var platilloDes1 = null;
+// var platilloDes2 = null;
+// var platilloDes3 = null;
+// var platilloDes4 = null;
+
+var [platilloDes1, platilloDes2, platilloDes3, platilloDes4] = platillos;
+
+/*Cualquiera de las 3 formas anteriores es correcta para la dedestructuracion del
+arreglo */
+
+console.log(platilloDes1, platilloDes2, platilloDes3, platilloDes4);
