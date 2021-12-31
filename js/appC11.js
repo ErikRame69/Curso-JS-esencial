@@ -199,7 +199,7 @@ valor original. */
 
 //slice
 console.log("** slice ** ");
-resultado = mensaje3.slice(6);/*Lo que hace este metodo es mostrar el mensaje 
+resultado = mensaje3.slice(10);/*Lo que hace este metodo es mostrar el mensaje 
 despues de la cantidad de caracteres indicados.
 En esta caso son 6, esto quiere decir que se saltara 6 caracteres y nos mostrara 
 el texto posterior a eso */
@@ -215,4 +215,33 @@ console.log(resultado);
 /*Elimina los espacios en blanco, antes y despues de una cadena*/
 console.log("** trim ** ");
 resultado = mensaje3.trim();
+console.log(resultado);
+
+
+
+/******************* || METODOS DE TRANSFORMACION DE TEXTO EN JAVASCRIPT || *******************/
+console.log("\n|| MÉTODOS DE TRANSFORMACIÓN DE TEXTO EN JAVASCRIPT");
+
+var mensaje4 = "Estoy aprendiendo JavaScript, ES GENIAL";
+var menConcatenado = "y programacion";
+var total = 100200;
+
+//toString
+console.log("** toString ** ");
+resultado = total.toString();
+console.log(resultado);
+
+//toUpperCase
+console.log("** toUpperCase ** ");
+resultado = mensaje4.toUpperCase();
+console.log(resultado);
+
+//toLowerCase
+console.log("** toLowerCase ** ");
+resultado = mensaje4.toLowerCase()
+console.log(resultado);
+
+//concat
+console.log("** concat ** ");
+resultado = mensaje4.concat(" ", menConcatenado, " Podemos añadir mas parametros", " con una simple coma");
 console.log(resultado);
