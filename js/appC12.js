@@ -44,3 +44,32 @@ var platillosOne = platillos[1];
 console.log("En platillo seleccionado es: " + platillosOne + " y esta bunisima");
 /*Si nosotros queremos acceser a un dato en un arreglos que AUN NO EXISTE nos 
 saldra undefined.*/
+
+
+
+/******************* || ARREGLOS MULTIDIMENCIONALES || *******************/
+console.log("\n|| ARREGLOS MULTIDIMENCIONALES");
+
+var platillos = ["Tacos", "Langosta", "Lasaña", "Salmón"];
+var paises = new Array("México", "Canada", "Estados U", "Fracia");
+
+/*Para hacer arreglos multidimencionales solo debemos de crear un nuevo array
+e insertar en el los otros arreglos */
+
+var menu = [platillos, paises];
+console.log("El menú completo es: ", menu);
+
+console.log("\nPlatillos___________");
+console.log(menu[0][0]); //Tacos
+console.log(menu[0][1]); //Langosta
+console.log(menu[0][2]); //Lasana
+console.log(menu[0][3]); //Salmon
+
+console.log("\nPaises______________");
+console.log(menu[1][0]); //Mexico
+console.log(menu[1][1]); //Canada
+console.log(menu[1][2]); //Estados U
+console.log(menu[1][3]); //Francia
+
+/*Con esto indicamos que entramos al primer arreglo y estando dentro del arreglo
+accedemos a la informacion de la posicion indicada del 2do parametro*/
