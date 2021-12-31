@@ -245,3 +245,30 @@ console.log(resultado);
 console.log("** concat ** ");
 resultado = mensaje4.concat(" ", menConcatenado, " Podemos añadir mas parametros", " con una simple coma");
 console.log(resultado);
+
+
+
+/******************* || COMO FUNCIONAN EN JAVASCRIPT LAS PLANTILLAS Y LOS LITERALES || *******************/
+console.log("\n|| CÓMO FUNCIONAN EN JAVASCRIPT LAS PLANTILLAS Y LOS LITERALES");
+
+var lenguaje = "JavaScript";
+var lenguaje2 = "HTML";
+var mensaje = `Me gusta ${lenguaje} y su integración con ${lenguaje2}`;
+/*Como vemos para hacer uso de las backsticks debemos de encerrar los que queremos
+converti en plantilla en una comillas especiales
+    `` 
+y dentro de ellas colocar el texto, pero si nosotros queremos ingresar datos a nuestra
+plantilla, dentro de las backsticks debemos de colocar lo siguiente
+    `${Dentro de esto llamamos a la variable o los datos que queremos que 
+    se muestren}`  */
+console.log(mensaje);
+
+console.log("Segundo ejemplo");
+
+var mensajeMultilinea = `Hola mundo
+estoy aprendiendo
+${lenguaje2} y me encanta
+cómo se integra con ${lenguaje2}`;
+/*Otra ventaja de las backsticks son las multilineas, podemos escribir en diferentes
+lineas. */
+console.log(mensajeMultilinea);
