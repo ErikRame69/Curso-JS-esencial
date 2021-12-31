@@ -99,3 +99,36 @@ Este metodo nos traera todas las incidencias encontradas en el arreglo*/
 
 var resultadoFilter = menu.filter(platillo => platillo.pais == "México");
 console.log(resultadoFilter); 
+
+
+
+/******************* || VALIDACION DE ELEMENTOS EN UN ARREGLO || *******************/
+console.log("\n|| VALIDACIÓN DE ELEMENTOS EN UN ARREGLO");
+
+var menu = [
+    {nombre:"Tacos", precio:20, pais:"México"},
+    {nombre:"Langosta", precio:1500, pais:"México"},
+    {nombre:"Lasaña", precio:425, pais:"Italia"},
+    {nombre:"Salmón", precio:800, pais:"Rusia"},
+    {nombre:"Filete Kobe", precio:4500, pais:"Japón"}
+];
+
+var resultadoSome = menu.some(platillo => platillo.precio <= 20);
+console.log(resultadoSome);
+
+if (resultadoSome == true) {
+    console.log("Si hay platillos menores a 20 pesos");
+} else {
+    console.log("Lo sentimos, no hay platillos de 20 pesos o menos");
+}
+/*Esto es como una comparacion y validacion */
+
+var resultadoEvery = menu.every(platillo => platillo.precio <= 20);
+/*Este metodo valida que todos los elementos de ese arreglo cumplan con esta 
+condicion */
+console.log("Todos los platillos cuestan menos de $20 ",resultadoEvery);
+if (resultadoEvery == true) {
+    console.log("Si hay platillos menores a 20 pesos");
+} else {
+    console.log("Lo sentimos, no todos platillos cuestan menos de 20 pesos");
+}
