@@ -28,3 +28,19 @@ console.log(bebidas);
 
 /*Para saber si una variable es un array o no vamos a usa .isArray */
 console.log(Array.isArray(bebidas));//Nos imprime true
+
+
+
+/******************* || COMO MEDIR Y ACCEDER EN JAVASCRIPT A UN ARREGLO || *******************/
+console.log("\n|| CÓMO MEDIR Y ACCEDER EN JAVASCRIPT A UN ARREGLO");
+
+var platillos = ["Tacos", "Langosta", "Lasaña", "Salmón", "Filete Kobe"];
+console.log("Hay " + platillos.length + " platillos en el menú");
+
+/*Para poder acceder a  la informacion contenida en un posicion o indice especifico 
+en el arreglo haremos lo siguiente*/
+
+var platillosOne = platillos[1];
+console.log("En platillo seleccionado es: " + platillosOne + " y esta bunisima");
+/*Si nosotros queremos acceser a un dato en un arreglos que AUN NO EXISTE nos 
+saldra undefined.*/
