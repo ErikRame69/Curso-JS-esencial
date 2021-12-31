@@ -73,3 +73,33 @@ console.log(menu[1][3]); //Francia
 
 /*Con esto indicamos que entramos al primer arreglo y estando dentro del arreglo
 accedemos a la informacion de la posicion indicada del 2do parametro*/
+
+
+
+/******************* || OPERACIONES BASICAS DE UN ARREGLO || *******************/
+console.log("\n|| OPERACIONES BÁSICAS DE UN ARREGLO");
+
+console.log("-----------push---------");
+var platillos = ["Tacos", "Langosta", "Lasaña", "Salmón"];
+console.log("Antes ", platillos);
+
+platillos.push("Tostadas");
+platillos.push("Tamales");
+platillos.push("Pavo");
+console.log("Después ", platillos);
+//Con este metodo estamos mandado estas 3 cadenas de texto a el arreglo platillo
+
+console.log("-----------pop---------");
+platillos.pop();/*Para poder eliminar varios elementos debemos de repetir el 
+.pop las neces necesarias. */
+console.log("Platillos después de pop: ", platillos);
+
+console.log("-----------join y toString---------");
+/*Podemos convertir un array en una cadena de texto con el uso de .join o de 
+.toString */
+console.log(".toString");
+var arrayToString = platillos.toString();
+console.log(arrayToString);
+console.log(".toJoin");
+var arrayToString2 = platillos.join();
+console.log(arrayToString2);
