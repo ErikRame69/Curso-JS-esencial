@@ -171,3 +171,48 @@ Tambien podemos indicarle un segundo parametros despues de una coma
 ||  "", parametro || 
 para indicar en que posicion debe de empezar a encontrar coincidencias*/
 console.log(resultado);
+
+
+
+/******************* || METODOS DE GENERACION, REEMPLAZO Y SEPARACION || *******************/
+console.log("\n|| MÉTODOS DE GENERACIÓN, REEMPLAZO Y SEPARACIÓN");
+
+var mensaje3 = "     \nEstoy aprendiendo JavaScript y estoy aprendiendo mucho     ";
+//Añadi un salto de linea para que nose viera tan desordenado
+var resultado;
+
+//repeat
+console.log("** repeat ** ");
+resultado = mensaje3.repeat(5);/*Indicamos la cantidad de veces que queremos que
+se repita la cadena de texto.*/
+console.log(resultado);
+
+//replace
+console.log("** replace ** ");
+resultado = mensaje3.replace("JavaScript", "a programar en JavaScript");
+/*                  El primer parametro  | El segundo paramtro es el texto nuevo
+                    indica la palabra a  | que remplazara al otro
+                    buscar y remplazar   |                                     */
+console.log(resultado);
+/*Este metodo solo remplaza al mensaje dentro de su uso, NO lo remplaza el v
+valor original. */
+
+//slice
+console.log("** slice ** ");
+resultado = mensaje3.slice(6);/*Lo que hace este metodo es mostrar el mensaje 
+despues de la cantidad de caracteres indicados.
+En esta caso son 6, esto quiere decir que se saltara 6 caracteres y nos mostrara 
+el texto posterior a eso */
+console.log(resultado);
+
+//split
+/*El metodo Split va a separar toda la cadena de texto en un arreglo*/
+console.log("** split ** ");
+resultado = mensaje2.split(" ");
+console.log(resultado);
+
+//trim
+/*Elimina los espacios en blanco, antes y despues de una cadena*/
+console.log("** trim ** ");
+resultado = mensaje3.trim();
+console.log(resultado);
