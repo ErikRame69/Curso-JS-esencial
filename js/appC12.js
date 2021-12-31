@@ -103,3 +103,40 @@ console.log(arrayToString);
 console.log(".toJoin");
 var arrayToString2 = platillos.join();
 console.log(arrayToString2);
+
+
+
+/******************* || GENERACION DE ARREGLOS CON SPLIT(), FROM() Y OF() || *******************/
+console.log("\n|| GENERACIÓN DE ARREGLOS CON SPLIT(), FROM() Y OF()");
+
+var mensaje = "ceviche, tacos, tortillas, pasta";
+var platillos = mensaje.split(', ');/*Es aqui donde nosotros le indicamos el 
+caracter que marca la separación, en este caso estamos indicando que cada valor 
+del arrego esta dividido o separado por ", " */
+
+/*Tambien hay otra forma de generar un arreglo, pero esta forma la usamos cuando tenemos
+valores en nuestra pagina web 
+Para poder generar el arreglo, lo primero que tenemos que hacer es traernos dicha 
+informacion*/
+
+var platillosHTML = Array.from(document.querySelectorAll(".platillos p"));/*Primero asignamos
+el valor de la clase platillos en HTML a la variable platillosHTML en JavaScript
+le estamos indicando que vaya a la clase platillos y solo nos traiga lo que se 
+encuentra dentro de la etiqueta p.
+Todo esto lo "envolvemos" en la clase Array.from para indicarle de manera formal que
+sera un arreglo */
+console.log("Sin el textContent: ",platillosHTML);
+
+var platillosMap = platillosHTML.map(platillo => platillo.textContent)
+/*                      Este es un parametro  | Aqui indicamos que de ese parametro
+                        para guardar de manera| solo queremos el contenido en
+                        temporal los datos que| texto.
+                        recibe.                                   */
+/*Ahora, lo que hacemos aqui es asignar a la varible platillosMap el arreglo que se
+encuentra dentro de platillosHTML, pero, estamos usando en metodo .map, que por si 
+solo busca el los parametros y los separa por si solo */
+console.log("Con el textContent: ", platillosMap);
+
+var platillosOf = Array.of("Queso", "Pan", "Leche", "Harina", "Huevo");
+//Convierte todo lo que este dentro y separado por una coma en un array.
+console.log(platillosOf);
