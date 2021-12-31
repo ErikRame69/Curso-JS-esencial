@@ -98,4 +98,4 @@ Para esto tenemos el metodo filter
 Este metodo nos traera todas las incidencias encontradas en el arreglo*/
 
 var resultadoFilter = menu.filter(platillo => platillo.pais == "México");
-console.log(resultadoFilter);
+console.log(resultadoFilter); 
