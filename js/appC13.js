@@ -48,3 +48,54 @@ console.log(plaElegido);
 //Nos muestra todo el objeto
 /*Esta formas de buscar dentro de un arreglo son muy utlies para encontrar un 
 determinado dato dentro de un arreglo */
+
+
+
+/******************* || BUSQUEDA DE INDICE DE ELEMENTOS || *******************/
+console.log("\n|| BÚSQUEDA DE ÍNDICE DE ELEMENTOS");
+
+/*findIndex nos ayuda a saber en que posicion del arreglo se encuentra nuestro dato
+en lugar de mandarnos un dato usando el indice, nos arroja un indice buscando un 
+dato */
+
+var platillos = ["Tacos", "Langosta", "Lasaña", "Salmón", "Filete Kobe"];
+var numPlatillo = platillos.findIndex(platillo => platillo == "Lasaña");
+console.log("EL numero del platillo es: ", numPlatillo);
+//IMPRIME: EL numero del platillo es:  2
+
+var menu = [
+    {nombre:"Tacos", precio:20, pais:"México"},
+    {nombre:"Langosta", precio:1500, pais:"Alemania"},
+    {nombre:"Lasaña", precio:425, pais:"Italia"},
+    {nombre:"Salmón", precio:800, pais:"Rusia"},
+    {nombre:"Filete Kobe", precio:4500, pais:"Japón"}
+];
+var numPlatillo = menu.findIndex(platillo => platillo.nombre == "Salmón");
+console.log("EL numero del platillo es: ", numPlatillo);
+//IMPRIME: EL numero del platillo es:  3
+
+
+
+/******************* || FILTRAR ARREGLOS USANDO JAVASCRIPT || *******************/
+console.log("\n|| FILTRAR ARREGLOS USANDO JAVASCRIPT");
+
+var menu = [
+    {nombre:"Tacos", precio:20, pais:"México"},
+    {nombre:"Langosta", precio:1500, pais:"México"},
+    {nombre:"Lasaña", precio:425, pais:"Italia"},
+    {nombre:"Salmón", precio:800, pais:"Rusia"},
+    {nombre:"Filete Kobe", precio:4500, pais:"Japón"}
+];
+
+var resultado = null;
+
+resultado = menu.find(platillo => platillo.pais == "México");
+console.log(resultado);
+/*Si nosotros lo hacemos de esta manera hay una limitante, el metodo find solo 
+nos traera la primer incidencia encontrada e ignorara todas las demás.
+
+Para esto tenemos el metodo filter
+Este metodo nos traera todas las incidencias encontradas en el arreglo*/
+
+var resultadoFilter = menu.filter(platillo => platillo.pais == "México");
+console.log(resultadoFilter);
