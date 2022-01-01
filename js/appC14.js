@@ -48,13 +48,13 @@ foto.addEventListener('click', function () {
 /******************* || PROPIEDADES Y METODOS DEL BOM || *******************/
 console.log("\n|| PROPIEDADES Y MÉTODOS DEL BOM");
 
-// console.log("innerHeight: ". window.width);
-// console.log("innerWidth: ". window.innerWidth);
+console.log("innerHeight: ", window.innerHeight);
+console.log("innerWidth: ", window.innerWidth);
 
 localStorage.setItem('contenido', 'Ars Longa, Vita Brevis');
-
+var contenidoLS = localStorage.getItem('contenido');
+console.log(contenidoLS);
 boton.addEventListener('click', function(){
-    var contenidoLS = localStorage.getItem('contenido');
     //document.getElementsByClassName("principal").innerHTML = "contenidoLS";
     //document.getElementById("remplazo").innerHTML = contenidoLS;  
     document.getElementsByClassName("principal")[1].innerHTML=contenidoLS;
