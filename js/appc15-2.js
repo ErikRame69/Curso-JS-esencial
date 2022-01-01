@@ -1,15 +1,15 @@
-"use strict";
+"use strict" //Activamos modulo estricto para evitar posibles fallas.
 
-//********************************
-//*** Trabajando con promesas
+console.log("\n************* C15 - TRABAJO CON DATOS REMOTOS O EXTERNOS ************");-
 
+/******************* || TRABAJAR CON PROMESAS EN JAVASCRIPT || *******************/
+console.log("\n|| TRABAJAR CON PROMESAS EN JAVASCRIPT");
 
-var boton = document.getElementById('boton');
+var boton = document.getElementById("boton");
 var contenedor = document.getElementById('contenedor');
 var contBanderas = document.getElementById('banderas');
 
 boton.addEventListener('click', function () {
-
     getPosts()
         .then(data => data.json())
         .then(posts => {
@@ -20,11 +20,10 @@ boton.addEventListener('click', function () {
         .then(countries => {
             mostrarBanderas(countries);
         });
-
 });
 
 function getPosts() {
-    return fetch ('http://jsonplaceholder.typicode.com/posts');
+    return fetch ('https://jsonplaceholder.typicode.com/todos');
 }
 
 function getCountries() {
@@ -40,6 +39,9 @@ function mostrarBanderas(countries) {
         bandera.height = '20';
         contBanderas.appendChild(bandera);
     })
+    /*Esta funcion no sirve debido a que la API ya no esta disponible, pero, lo
+    que hace es crear un elemento y mandarlo al la clase llamada "banderas" que se 
+    enncuentra dentro del documento HTML */
 }
 
 function mostrarDatos(posts) {
@@ -49,7 +51,7 @@ function mostrarDatos(posts) {
         let contenido = document.createElement('p');
 
         titulo.innerHTML = (i + 1) + " - " + post.title;
-        contenido.innerHTML = post.body;
+        contenido.innerHTML = post.completed;
 
         contenedor.appendChild(titulo);
         contenedor.appendChild(contenido);
