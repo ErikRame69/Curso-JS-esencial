@@ -26,12 +26,12 @@ getElementsByTagName nos permite traer objetos de acuerdo a las etiqueta */
 
 var parrafosPorClase = document.getElementsByClassName('principal')[0].textContent;
 
-boton.addEventListener('click', function(){
+//boton.addEventListener('click', function(){
     // alert("Te redireccionaresmos a mi GitHUb")
     // window.location.href = "https://github.com/ErikRame69";
     console.log(todosLosParrafos);
     console.log(parrafosPorClase);
-});
+//}); Comentado para poder trabajar con el tema siguiente
 
 var foto = document.createElement('img');
 foto.src= '../media/Fondo 1.jpg';
@@ -41,4 +41,23 @@ document.body.appendChild(foto);
 
 foto.addEventListener('click', function () {
     alert("Pulsaste sobre la imagen.")
-})
+});
+
+
+
+/******************* || PROPIEDADES Y METODOS DEL BOM || *******************/
+console.log("\n|| PROPIEDADES Y MÉTODOS DEL BOM");
+
+// console.log("innerHeight: ". window.width);
+// console.log("innerWidth: ". window.innerWidth);
+
+localStorage.setItem('contenido', 'Ars Longa, Vita Brevis');
+
+boton.addEventListener('click', function(){
+    var contenidoLS = localStorage.getItem('contenido');
+    //document.getElementsByClassName("principal").innerHTML = "contenidoLS";
+    //document.getElementById("remplazo").innerHTML = contenidoLS;  
+    document.getElementsByClassName("principal")[1].innerHTML=contenidoLS;
+    /*En este ejemplo estamos asignanso el la clase que se encuentra dentro del
+    HTML con contenido, es importante indicar */
+});
