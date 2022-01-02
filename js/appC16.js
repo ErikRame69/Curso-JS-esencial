@@ -6,11 +6,13 @@ console.log("\n************* C16 - PROGRAMACIÓN ORIENTADA A OBJETOS ***********
 console.log("\n|| TRABAJAR CON CLASES EN LA PROGRAMACIÓN ORIENTADA A OBJETOS");
 
 class Pantalla { /*Aqui nosotros estamos creando la clase pantalla */
-    constructor(){ /*Todas las clases que creemos necesitan un constructor*/
+    constructor(){ /*Todas las clases que creemos necesitan un constructor
+        El constructor defina como se va a presentar a nuestro entorno de 
+        desarrollo, aqui estamos indicando los atributos*/
 
     }
 }
 
-const tvSala = new Pantalla(); //Esto es la instancia de una clase
+//const tvSala = new Pantalla(); //Esto es la instancia de una clase
 
-const tvHabitacion = new Pantalla();//Esto es la instancia de una clase
+//const tvHabitacion = new Pantalla();//Esto es la instancia de una clase
