@@ -2,13 +2,42 @@
 
 console.log("\n************* C16 - PROGRAMACIÓN ORIENTADA A OBJETOS ************");-
 
+/******************* || HARENCIA DE MÉTODOS Y PROPIEDADES || *******************/
+console.log("\n|| HARENCIA DE MÉTODOS Y PROPIEDADES");
+
+class Producto {
+    constructor(numSerie){
+        this.numSerie = numSerie;
+        this.tiempoGarantia = 100;
+    }
+    
+    static get infoTienda(){/*Las propiedades estaticas hacen que el metodo info 
+        tienda este disponible aunque nosotros no hagamos una instancia, no fue
+        necesario hacer una instacia de ese objeto para que nosotros lo usemos*/
+        console.log("Productos de la tienda Patitos Inc");
+    }
+
+    set setGarantia(value) {
+        this.tiempoGarantia -= value;
+    }
+    get getGarantia() {
+        return this.garantia;
+    }
+
+}
+
+
 /******************* || OBJETOS: SUS MÉTODOS Y SUS PROPIEDADES || *******************/
 console.log("\n|| OBJETOS: SUS MÉTODOS Y SUS PROPIEDADES");
 
-class Pantalla2 { /*Aqui nosotros estamos creando la clase pantalla */
-    constructor(marca, modelo, puldadas){ /*Todas las clases que creemos necesitan un constructor
+class Pantalla2 extends Producto { /*Aqui nosotros estamos creando la clase pantalla */
+    constructor(numSerie, marca, modelo, puldadas){ /*Todas las clases que creemos necesitan un constructor
         El constructor defina como se va a presentar a nuestro entorno de 
         desarrollo, aqui estamos indicando los atributos*/
+        super(numSerie);/*Tenemos que indicarle a la clase hija de donde vendran los
+        atributos, en este caso usamos la palabra reservada "super" y le pasamos el 
+        valo con el que iniciamos el constructor.*/
+        
         this.marca = marca;
         this.modelo = modelo;
         this.puldadas = puldadas;
@@ -19,7 +48,8 @@ class Pantalla2 { /*Aqui nosotros estamos creando la clase pantalla */
     para poder inicializar los metodos*/
 
     encendido(){
-        console.log(`La pantalla ${this.marca} se ha encendido`);
+        this.garantia = 1;
+        console.log(`La pantalla ${this.marca} se ha encendido.`);
     }
 
     volumen(){
@@ -46,12 +76,9 @@ class Pantalla2 { /*Aqui nosotros estamos creando la clase pantalla */
     } /*Con get podemos obtener la informacion y con el return refresarlo */
 }
 
-const tvSala2 = new Pantalla2("Gran cinema", "Sony", 120); 
+const tvSala2 = new Pantalla2("C2458G", "Gran cinema", "Sony", 120); 
 //Esto es la instancia de una clase
 
-const tvHabitacion2 = new Pantalla2("3DX Max", "Sharp", 150);
+const tvHabitacion2 = new Pantalla2("X565FD", "3DX Max", "Sharp", 150);
 //Esto es la instancia de una clase
-
-
-
 
