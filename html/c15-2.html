@@ -28,10 +28,35 @@
                 font-weight: bold;
                 background-color: steelblue;
             }
+
+            img {
+            border: 1px solid gray;
+            margin: 5px;
+            background-color: #ccc;
+            }
+
+            #mensajes {
+                width: 90%;
+                height: 50px;
+                margin: 0 auto;
+                background-color: lightcoral;
+                margin-top: 10px;
+                padding: 10px;
+                border-radius: 5px;
+                color: white;
+                text-align: center;
+            }
+
+            .hide {
+                display: none;
+            }
+
         </style>
     </head>
     <body>
 
+        <div id="mensajes" class="hide"></div>
+        
         <button id="boton">Traer datos</button>
         
         <div id="contenedor"></div>

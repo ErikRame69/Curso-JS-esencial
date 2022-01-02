@@ -8,6 +8,7 @@ console.log("\n|| TRABAJAR CON PROMESAS EN JAVASCRIPT");
 var boton = document.getElementById("boton");
 var contenedor = document.getElementById('contenedor');
 var contBanderas = document.getElementById('banderas');
+var mensajes = document.getElementById('mensajes');
 
 boton.addEventListener('click', function () {
     getPosts()
@@ -19,7 +20,16 @@ boton.addEventListener('click', function () {
         .then(data => data.json())
         .then(countries => {
             mostrarBanderas(countries);
+        })
+    /*****************TRABAJANDO CON ERRORES EN JAVASCRIPT **********************/
+        .catch(error => { /*con la pabra reservada catch, como su nombre lo dice 
+            vamos a atrapar todos los errores que puedan pasar */
+            mensajes.classList.toggle('hide');
+            mensajes.innerHTML=error;
+            setTimeout(()=> mensajes.classList.toggle('hide'), 7000);
         });
+    /*****************TRABAJANDO CON ERRORES EN JAVASCRIPT FIN **********************/
+    
 });
 
 function getPosts() {
@@ -27,7 +37,7 @@ function getPosts() {
 }
 
 function getCountries() {
-    return fetch ('https://restcountries.eu/rest/v2/all');
+    return fetch ('https://restcountries.eu/rest/v2/alfl');
 }
 
 function mostrarBanderas(countries) {
